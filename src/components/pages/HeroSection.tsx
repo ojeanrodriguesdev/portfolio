@@ -1,9 +1,8 @@
-// HeroSection.tsx
 'use client'
 
 import Link from 'next/link'
 import Image from 'next/image'
-import { useTypingEffect } from '@/components/hooks/useTypingEffect' // Importe o Hook
+import { useTypingEffect } from '@/components/hooks/useTypingEffect'
 
 const greetings = ['Hi! My name is Jean Rodrigues!', "I'm React Developer!"]
 
@@ -31,32 +30,32 @@ const MobileIcons = [
 const DesktopIcons = [
   {
     imageSrc: '/images/heroSection/github.svg',
-    url: 'https://github.com',
+    url: 'https://github.com/ojeanrodriguesdev',
     widthDesktop: 47,
     heightDesktop: 40,
   },
   {
     imageSrc: '/images/heroSection/instagram.svg',
-    url: 'https://www.linkedin.com',
+    url: '#',
     widthDesktop: 56,
     heightDesktop: 40,
   },
   {
     imageSrc: '/images/heroSection/curriculum.svg',
-    url: '/path-to-curriculum',
+    url: '#',
     widthDesktop: 40,
     heightDesktop: 40,
   },
 ]
 
 export default function HeroSection() {
-  const typedText = useTypingEffect(greetings, 40, 2, 2000) // Chame o Hook
+  const typedText = useTypingEffect(greetings, 25, 2000)
 
   return (
     <section className="relative w-screen min-h-screen bg-gradient-to-b from-[#07bdff] via-[#07b0ff6c] to-[#07bdff] flex items-center justify-around py-6 ">
       <div className="w-screen flex flex-col xl:flex-row items-center justify-around ">
         <div className="flex flex-col xl:flex-row">
-          <div className="w-full flex items-center justify-center mb-3 lg:mb-0">
+          <div className="w-full flex items-center justify-center mb-3 xl:mb-0">
             <Image
               src="/images/HeroSection/me.png"
               alt="Jean Rodrigues"
@@ -90,7 +89,7 @@ export default function HeroSection() {
                         alt={`Icon ${index + 1}`}
                         width={icon.widthMobile}
                         height={icon.heightMobile}
-                        className=""
+                        className="drop-shadow-lg"
                       />
                     </Link>
                   ))}
