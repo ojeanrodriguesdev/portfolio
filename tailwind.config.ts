@@ -12,6 +12,9 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        impact: ['"Protest Strike"', "sans-serif"],
+      },
     },
   },
   plugins: [],
