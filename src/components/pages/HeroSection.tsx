@@ -112,7 +112,7 @@ export default function HeroSection() {
 
                 {/* Texto Principal */}
                 <h1 className="leading-[38px] md:leading-[75px] drop-shadow-xl font-extrabold text-5xl md:text-8xl">
-                  <span className="pr-[120px] md:pr-[240px]">REACT</span> <br />
+                  <span className="pr-[115px] md:pr-[240px]">REACT</span> <br />
                   DEVELOPER
                 </h1>
               </div>
