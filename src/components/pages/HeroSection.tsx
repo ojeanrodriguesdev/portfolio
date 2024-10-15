@@ -52,9 +52,9 @@ export default function HeroSection() {
   const typedText = useTypingEffect(greetings, 25, 2000)
 
   return (
-    <section className="relative w-screen min-h-screen bg-gradient-to-b from-[#07bdff] via-[#07b0ff6c] to-[#07bdff] flex items-center justify-around py-6 ">
-      <div className="w-screen flex flex-col xl:flex-row items-center justify-around ">
-        <div className="flex flex-col xl:flex-row">
+    <section className="relative w-full min-h-screen bg-gradient-to-b from-[#07bdff] via-[#07b0ff6c] to-[#07bdff] flex items-center justify-around py-6 ">
+      <div className="w-screen flex flex-col xl:flex-row items-center justify-around overflow-hidden">
+        <div className="flex flex-col xl:flex-row ">
           <div className="w-full flex items-center justify-center mb-3 xl:mb-0">
             <Image
               src="/images/HeroSection/me.png"
