@@ -71,7 +71,7 @@ export default function HeroSection() {
           <div className="relative flex flex-col md:flex-row items-center justify-center mx-24">
             <div>
               {/* Frase Digitando */}
-              <div className="pl-[3px] md:pl-[5px] mb-1">
+              <div className="pl-[2px] md:pl-[5px] mb-2">
                 <p className="text-[#454545] font-impact font-semibold lg:font-semibold text-sm md:text-lg drop-shadow-lg">
                   {typedText}
                   <span className="animate-blink">|</span> {/* Cursor piscante */}
@@ -120,7 +120,7 @@ export default function HeroSection() {
 
                 {/* Frase Final */}
                 <div className="text-end">
-                  <p className="text-[#454545] font-impact font-semibold lg:font-semibold text-sm md:text-lg drop-shadow-md">
+                  <p className="text-[#454545] font-impact font-semibold lg:font-semibold text-sm md:text-lg drop-shadow-md leading-[15px] md:leading-[20px]">
                     Web development enthusiast,
                     <br /> 1 year of freelancing
                   </p>
