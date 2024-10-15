@@ -52,9 +52,9 @@ export default function HeroSection() {
   const typedText = useTypingEffect(greetings, 25, 2000)
 
   return (
-    <section className="relative w-full min-h-screen bg-gradient-to-b from-[#07bdff] via-[#07b0ff6c] to-[#07bdff] flex items-center justify-around py-6 ">
+    <section className="relative w-full min-h-screen bg-gradient-to-b from-[#07bdff] via-[#07b0ff6c] to-[#07bdff] flex items-center justify-around py-6">
       <div className="w-screen flex flex-col xl:flex-row items-center justify-around overflow-hidden">
-        <div className="flex flex-col xl:flex-row ">
+        <div className="flex flex-col xl:flex-row">
           <div className="w-full flex items-center justify-center mb-3 xl:mb-0">
             <Image
               src="/images/HeroSection/me.png"
@@ -64,14 +64,14 @@ export default function HeroSection() {
               priority={true}
               loading="eager"
               quality={100}
-              className="w-[250px] sm:w-[300px] md:w-[350px] lg:w-[366px] xl:w-[366] h-auto object-contain"
+              className="w-[250px] sm:w-[300px] md:w-[350px] lg:w-[366px] xl:w-[366px] h-auto object-contain"
             />
           </div>
           {/* ViewPort Inteiro */}
           <div className="relative flex flex-col md:flex-row items-center justify-center mx-24">
             <div>
               {/* Frase Digitando */}
-              <div className="pl-[3px] md:pl-[5px]">
+              <div className="pl-[3px] md:pl-[5px] mb-1">
                 <p className="text-[#454545] font-impact font-semibold lg:font-semibold text-sm md:text-lg drop-shadow-lg">
                   {typedText}
                   <span className="animate-blink">|</span> {/* Cursor piscante */}
@@ -79,9 +79,9 @@ export default function HeroSection() {
               </div>
 
               {/* Titulo com Ícones ao lado */}
-              <div className="relative text-center text-white ">
+              <div className="relative text-center text-white">
                 {/* Ícones Mobile */}
-                <div className="flex md:hidden absolute right-[45px] top-[5%] space-x-2 transform translate-x-10 items-center justify-center z-20">
+                <div className="flex md:hidden absolute right-[45px] space-x-2 transform translate-x-10 items-center justify-center z-20">
                   {MobileIcons.map((icon, index) => (
                     <Link key={index} href={icon.url} passHref>
                       <Image
@@ -111,18 +111,20 @@ export default function HeroSection() {
                 </div>
 
                 {/* Texto Principal */}
-                <h1 className="leading-[38px] md:leading-[75px] drop-shadow-xl font-extrabold text-5xl md:text-8xl">
-                  <span className="pr-[115px] md:pr-[240px]">REACT</span> <br />
-                  DEVELOPER
-                </h1>
-              </div>
+                <div className="flex flex-col items-start text-white drop-shadow-xl">
+                  <h1 className="leading-[25px] md:leading-[55px] font-extrabold text-5xl md:text-8xl">
+                    REACT
+                  </h1>
+                  <h1 className="font-extrabold text-5xl md:text-8xl">DEVELOPER</h1>
+                </div>
 
-              {/* Frase Final */}
-              <div className="text-end">
-                <p className="text-[#454545] font-impact font-semibold lg:font-semibold text-sm md:text-lg drop-shadow-md">
-                  Web development enthusiast,
-                  <br /> 1 year of freelancing
-                </p>
+                {/* Frase Final */}
+                <div className="text-end">
+                  <p className="text-[#454545] font-impact font-semibold lg:font-semibold text-sm md:text-lg drop-shadow-md">
+                    Web development enthusiast,
+                    <br /> 1 year of freelancing
+                  </p>
+                </div>
               </div>
             </div>
           </div>
