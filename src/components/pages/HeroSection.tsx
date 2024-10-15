@@ -79,7 +79,7 @@ export default function HeroSection() {
               </div>
 
               {/* Titulo com Ícones ao lado */}
-              <div className="relative text-center text-white drop-shadow-2xl">
+              <div className="relative text-center text-white ">
                 {/* Ícones Mobile */}
                 <div className="flex md:hidden absolute right-[45px] top-[5%] space-x-2 transform translate-x-10 items-center justify-center z-20">
                   {MobileIcons.map((icon, index) => (
@@ -119,7 +119,7 @@ export default function HeroSection() {
 
               {/* Frase Final */}
               <div className="text-end">
-                <p className="text-[#454545] font-impact font-semibold lg:font-semibold text-sm md:text-lg drop-shadow-lg">
+                <p className="text-[#454545] font-impact font-semibold lg:font-semibold text-sm md:text-lg drop-shadow-md">
                   Web development enthusiast,
                   <br /> 1 year of freelancing
                 </p>
