@@ -8,20 +8,20 @@ const greetings = ['Hi! My name is Jean Rodrigues!', "I'm React Developer!"]
 
 const MobileIcons = [
   {
-    imageSrc: '/images/heroSection/github.svg',
+    imageSrc: '/images/HeroSection/github.svg',
     url: 'https://github.com',
     widthMobile: 22,
     heightMobile: 30,
   },
   {
-    imageSrc: '/images/heroSection/instagram.svg',
+    imageSrc: '/images/HeroSection/instagram.svg',
     url: 'https://www.linkedin.com',
     widthMobile: 30,
     heightMobile: 40,
   },
   {
-    imageSrc: '/images/heroSection/curriculum.svg',
-    url: '/path-to-curriculum',
+    imageSrc: '/images/HeroSection/curriculum.svg',
+    url: '#',
     widthMobile: 20,
     heightMobile: 40,
   },
@@ -29,19 +29,19 @@ const MobileIcons = [
 
 const DesktopIcons = [
   {
-    imageSrc: '/images/heroSection/github.svg',
+    imageSrc: '/images/HeroSection/github.svg',
     url: 'https://github.com/ojeanrodriguesdev',
     widthDesktop: 47,
     heightDesktop: 40,
   },
   {
-    imageSrc: '/images/heroSection/instagram.svg',
+    imageSrc: '/images/HeroSection/instagram.svg',
     url: '#',
     widthDesktop: 56,
     heightDesktop: 40,
   },
   {
-    imageSrc: '/images/heroSection/curriculum.svg',
+    imageSrc: '/images/HeroSection/curriculum.svg',
     url: '#',
     widthDesktop: 40,
     heightDesktop: 40,
